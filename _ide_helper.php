@@ -1580,7 +1580,7 @@ namespace Illuminate\Support\Facades {
         /**
          * Get the currently authenticated user.
          *
-         * @return \CodeFlix\User|null 
+         * @return \CodeFlix\Models\User|null
          * @static 
          */ 
         public static function user()
@@ -1615,7 +1615,7 @@ namespace Illuminate\Support\Facades {
          * Log the given user ID into the application without sessions or cookies.
          *
          * @param mixed $id
-         * @return \CodeFlix\User|false 
+         * @return \CodeFlix\Models\User|false
          * @static 
          */ 
         public static function onceUsingId($id)
@@ -1679,7 +1679,7 @@ namespace Illuminate\Support\Facades {
          *
          * @param mixed $id
          * @param bool $remember
-         * @return \CodeFlix\User|false 
+         * @return \CodeFlix\Models\User|false
          * @static 
          */ 
         public static function loginUsingId($id, $remember = false)
@@ -1726,7 +1726,7 @@ namespace Illuminate\Support\Facades {
         /**
          * Get the last user we attempted to authenticate.
          *
-         * @return \CodeFlix\User 
+         * @return \CodeFlix\Models\User
          * @static 
          */ 
         public static function getLastAttempted()
@@ -1851,7 +1851,7 @@ namespace Illuminate\Support\Facades {
         /**
          * Return the currently cached user.
          *
-         * @return \CodeFlix\User|null 
+         * @return \CodeFlix\Models\User|null
          * @static 
          */ 
         public static function getUser()
@@ -1897,7 +1897,7 @@ namespace Illuminate\Support\Facades {
         /**
          * Determine if the current user is authenticated.
          *
-         * @return \CodeFlix\User 
+         * @return \CodeFlix\Models\User
          * @throws \Illuminate\Auth\AuthenticationException
          * @static 
          */ 
