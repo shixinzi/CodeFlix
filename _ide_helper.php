@@ -1,7 +1,7 @@
 <?php
 /**
  * A helper file for Laravel 5, to provide autocomplete information to your IDE
- * Generated for Laravel 5.4.36 on 2018-06-02 16:19:49.
+ * Generated for Laravel 5.4.36 on 2018-06-10 18:14:26.
  *
  * This file should not be included in your code, only analyzed by your IDE!
  *
@@ -1580,7 +1580,7 @@ namespace Illuminate\Support\Facades {
         /**
          * Get the currently authenticated user.
          *
-         * @return \CodeFlix\Models\User|null
+         * @return \CodeFlix\Models\User|null 
          * @static 
          */ 
         public static function user()
@@ -1615,7 +1615,7 @@ namespace Illuminate\Support\Facades {
          * Log the given user ID into the application without sessions or cookies.
          *
          * @param mixed $id
-         * @return \CodeFlix\Models\User|false
+         * @return \CodeFlix\Models\User|false 
          * @static 
          */ 
         public static function onceUsingId($id)
@@ -1679,7 +1679,7 @@ namespace Illuminate\Support\Facades {
          *
          * @param mixed $id
          * @param bool $remember
-         * @return \CodeFlix\Models\User|false
+         * @return \CodeFlix\Models\User|false 
          * @static 
          */ 
         public static function loginUsingId($id, $remember = false)
@@ -1726,7 +1726,7 @@ namespace Illuminate\Support\Facades {
         /**
          * Get the last user we attempted to authenticate.
          *
-         * @return \CodeFlix\Models\User
+         * @return \CodeFlix\Models\User 
          * @static 
          */ 
         public static function getLastAttempted()
@@ -1851,7 +1851,7 @@ namespace Illuminate\Support\Facades {
         /**
          * Return the currently cached user.
          *
-         * @return \CodeFlix\Models\User|null
+         * @return \CodeFlix\Models\User|null 
          * @static 
          */ 
         public static function getUser()
@@ -1897,7 +1897,7 @@ namespace Illuminate\Support\Facades {
         /**
          * Determine if the current user is authenticated.
          *
-         * @return \CodeFlix\Models\User
+         * @return \CodeFlix\Models\User 
          * @throws \Illuminate\Auth\AuthenticationException
          * @static 
          */ 
@@ -13701,3 +13701,26 @@ namespace  {
 
 
 
+namespace Illuminate\Support {
+    /**
+     * Methods commonly used in migrations
+     *
+     * @method Fluent after(string $column) Add the after modifier
+     * @method Fluent charset(string $charset) Add the character set modifier
+     * @method Fluent collation(string $collation) Add the collation modifier
+     * @method Fluent comment(string $comment) Add comment
+     * @method Fluent default(mixed $value) Add the default modifier
+     * @method Fluent first() Select first row
+     * @method Fluent index(string $name = null) Add the in dex clause
+     * @method Fluent on(string $table) `on` of a foreign key
+     * @method Fluent onDelete(string $action) `on delete` of a foreign key
+     * @method Fluent onUpdate(string $action) `on update` of a foreign key
+     * @method Fluent primary() Add the primary key modifier
+     * @method Fluent references(string $column) `references` of a foreign key
+     * @method Fluent nullable() Add the nullable modifier
+     * @method Fluent unique(string $name = null) Add unique index clause
+     * @method Fluent unsigned() Add the unsigned modifier
+     * @method Fluent useCurrent() Add the default timestamp value
+     */
+    class Fluent {}
+}
