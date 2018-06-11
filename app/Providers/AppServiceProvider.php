@@ -26,5 +26,22 @@ class AppServiceProvider extends ServiceProvider
         if ($this->app->environment() !== 'production') {
             $this->app->register(\Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class);
         }
+
+        $this->app->bind(
+            'bootstrapper::form',
+            function ($app) {
+                $form = new Form(
+                    $app->make('collective::html'),
+                    $app->make('url'),
+                    $app->make('view'),
+                    $app['session.store']->Token()
+                );
+
+                return $form->setSessionStore($app['session.store']);
+            },
+            true
+        );
+
+
     }
 }

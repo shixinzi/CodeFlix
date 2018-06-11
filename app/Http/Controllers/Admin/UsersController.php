@@ -2,6 +2,7 @@
 
 namespace CodeFlix\Http\Controllers\Admin;
 
+use CodeFlix\Forms\UserForm;
 use CodeFlix\Models\User;
 use Illuminate\Http\Request;
 use CodeFlix\Http\Controllers\Controller;
@@ -28,7 +29,12 @@ class UsersController extends Controller
      */
     public function create()
     {
-        //
+        $form = \FormBuilder::create(UserForm::class, [
+            'url' => route('admin.users.store'),
+            'method' => 'POST'
+        ]);
+
+        return view('admin.users.create', compact('form'));
     }
 
     /**
@@ -39,7 +45,7 @@ class UsersController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        dd($request->all());
     }
 
     /**
