@@ -39,6 +39,7 @@ Route::group([
                return view('admin.dashboard');
            });
         });
+    Route::resource('users', 'UsersController');
 });
 
 
