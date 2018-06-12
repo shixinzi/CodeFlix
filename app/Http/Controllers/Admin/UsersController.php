@@ -44,7 +44,7 @@ class UsersController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store()
+    public function store(Request $request)
     {
         /** @var Form $form */
         $form = \FormBuilder::create(UserForm::class);
@@ -56,7 +56,7 @@ class UsersController extends Controller
         $data['role'] = User::ROLE_ADMIN;
         $data['password'] = User::generatePassword();
         User::create($data);
-
+        $request->session()->flash('message', 'Usuário Criado com sucesso.');
         return redirect()->route('admin.users.index');
 
     }
