@@ -50,7 +50,10 @@ class UsersController extends Controller
         $form = \FormBuilder::create(UserForm::class);
 
         if (!$form->isValid()){
-            //
+            return redirect()
+                ->back()
+                ->withErrors($form->getErrors())
+                ->withInput();
         }
         $data = $form->getFieldValues();
         $data['role'] = User::ROLE_ADMIN;
