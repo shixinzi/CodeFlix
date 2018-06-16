@@ -3,7 +3,7 @@ namespace PHPSTORM_META {
 
    /**
     * PhpStorm Meta file, to provide autocomplete information for PhpStorm
-    * Generated on 2018-06-14 17:23:22.
+    * Generated on 2018-06-16 18:55:30.
     *
     * @author Barry vd. Heuvel <barryvdh@gmail.com>
     * @see https://github.com/barryvdh/laravel-ide-helper
@@ -66,6 +66,7 @@ namespace PHPSTORM_META {
         'form' => \Collective\Html\FormBuilder::class,
         'laravel-form-helper' => \Kris\LaravelFormBuilder\FormHelper::class,
         'laravel-form-builder' => \Kris\LaravelFormBuilder\FormBuilder::class,
+        'user.verification' => \Jrean\UserVerification\UserVerification::class,
         'command.ide-helper.generate' => \Barryvdh\LaravelIdeHelper\Console\GeneratorCommand::class,
         'command.ide-helper.models' => \Barryvdh\LaravelIdeHelper\Console\ModelsCommand::class,
         'command.ide-helper.meta' => \Barryvdh\LaravelIdeHelper\Console\MetaCommand::class,
@@ -216,6 +217,7 @@ namespace PHPSTORM_META {
         'form' => \Collective\Html\FormBuilder::class,
         'laravel-form-helper' => \Kris\LaravelFormBuilder\FormHelper::class,
         'laravel-form-builder' => \Kris\LaravelFormBuilder\FormBuilder::class,
+        'user.verification' => \Jrean\UserVerification\UserVerification::class,
         'command.ide-helper.generate' => \Barryvdh\LaravelIdeHelper\Console\GeneratorCommand::class,
         'command.ide-helper.models' => \Barryvdh\LaravelIdeHelper\Console\ModelsCommand::class,
         'command.ide-helper.meta' => \Barryvdh\LaravelIdeHelper\Console\MetaCommand::class,
@@ -366,6 +368,7 @@ namespace PHPSTORM_META {
         'form' => \Collective\Html\FormBuilder::class,
         'laravel-form-helper' => \Kris\LaravelFormBuilder\FormHelper::class,
         'laravel-form-builder' => \Kris\LaravelFormBuilder\FormBuilder::class,
+        'user.verification' => \Jrean\UserVerification\UserVerification::class,
         'command.ide-helper.generate' => \Barryvdh\LaravelIdeHelper\Console\GeneratorCommand::class,
         'command.ide-helper.models' => \Barryvdh\LaravelIdeHelper\Console\ModelsCommand::class,
         'command.ide-helper.meta' => \Barryvdh\LaravelIdeHelper\Console\MetaCommand::class,
@@ -516,6 +519,7 @@ namespace PHPSTORM_META {
         'form' => \Collective\Html\FormBuilder::class,
         'laravel-form-helper' => \Kris\LaravelFormBuilder\FormHelper::class,
         'laravel-form-builder' => \Kris\LaravelFormBuilder\FormBuilder::class,
+        'user.verification' => \Jrean\UserVerification\UserVerification::class,
         'command.ide-helper.generate' => \Barryvdh\LaravelIdeHelper\Console\GeneratorCommand::class,
         'command.ide-helper.models' => \Barryvdh\LaravelIdeHelper\Console\ModelsCommand::class,
         'command.ide-helper.meta' => \Barryvdh\LaravelIdeHelper\Console\MetaCommand::class,
@@ -666,6 +670,7 @@ namespace PHPSTORM_META {
         'form' => \Collective\Html\FormBuilder::class,
         'laravel-form-helper' => \Kris\LaravelFormBuilder\FormHelper::class,
         'laravel-form-builder' => \Kris\LaravelFormBuilder\FormBuilder::class,
+        'user.verification' => \Jrean\UserVerification\UserVerification::class,
         'command.ide-helper.generate' => \Barryvdh\LaravelIdeHelper\Console\GeneratorCommand::class,
         'command.ide-helper.models' => \Barryvdh\LaravelIdeHelper\Console\ModelsCommand::class,
         'command.ide-helper.meta' => \Barryvdh\LaravelIdeHelper\Console\MetaCommand::class,
@@ -816,6 +821,7 @@ namespace PHPSTORM_META {
         'form' => \Collective\Html\FormBuilder::class,
         'laravel-form-helper' => \Kris\LaravelFormBuilder\FormHelper::class,
         'laravel-form-builder' => \Kris\LaravelFormBuilder\FormBuilder::class,
+        'user.verification' => \Jrean\UserVerification\UserVerification::class,
         'command.ide-helper.generate' => \Barryvdh\LaravelIdeHelper\Console\GeneratorCommand::class,
         'command.ide-helper.models' => \Barryvdh\LaravelIdeHelper\Console\ModelsCommand::class,
         'command.ide-helper.meta' => \Barryvdh\LaravelIdeHelper\Console\MetaCommand::class,
@@ -966,6 +972,7 @@ namespace PHPSTORM_META {
         'form' => \Collective\Html\FormBuilder::class,
         'laravel-form-helper' => \Kris\LaravelFormBuilder\FormHelper::class,
         'laravel-form-builder' => \Kris\LaravelFormBuilder\FormBuilder::class,
+        'user.verification' => \Jrean\UserVerification\UserVerification::class,
         'command.ide-helper.generate' => \Barryvdh\LaravelIdeHelper\Console\GeneratorCommand::class,
         'command.ide-helper.models' => \Barryvdh\LaravelIdeHelper\Console\ModelsCommand::class,
         'command.ide-helper.meta' => \Barryvdh\LaravelIdeHelper\Console\MetaCommand::class,
