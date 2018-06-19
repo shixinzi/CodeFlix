@@ -32,7 +32,7 @@ Route::group([
     'prefix' => 'admin',
     'as' => 'admin.',
     'namespace' => 'Admin\\'
-], function (){
+    ], function (){
 
     Route::name('login')->get('login', 'Auth\LoginController@showLoginForm');
     Route::post('login', 'Auth\LoginController@login');
@@ -42,9 +42,10 @@ Route::group([
            Route::get('dashboard', function (){
                return view('admin.dashboard');
            });
+        Route::resource('users', 'UsersController');
+        Route::resource('categories', 'CategoriesController');
         });
-    Route::resource('users', 'UsersController');
-});
+    });
 
 
 Route::get('/force-login', function(){
