@@ -24,19 +24,24 @@
 
                 ];
                 $menus = Navigation::links($arrayLinks);
-                $logout = Navigation::links([[
+                $menuRight = Navigation::links([[
                     Auth::user()->name,
                     [
                         [
+                            'link' =>route('admin.user_settings.edit'),
+                            'title' => 'Configurações',
+                        ],
+                        [
                             'link' => route('admin.logout'),
-                            'title' => 'logout',
+                            'title' => 'Logout',
                             'linkAttributes' => [
                                 'onclick' => "event.preventDefault();document.getElementById(\"form-logout\").submit();"
                             ]
-                        ],
+                        ]
+
                     ]
                 ]])->right();
-                $navbar->withContent($menus)->withContent($logout);
+                $navbar->withContent($menus)->withContent($menuRight);
             }
         ?>
             {!! $navbar !!}
