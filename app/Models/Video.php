@@ -24,10 +24,13 @@ class Video extends Model implements Transformable
 
 
     //muitos para um
-
     public function serie(){
         return $this->belongsTo(Serie::class);
     }
 
+    //muitos para muitos
+    public function categories(){
+        return $this->belongsToMany(Category::class);
+    }
 }
 
