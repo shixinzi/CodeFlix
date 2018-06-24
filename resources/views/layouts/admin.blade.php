@@ -26,6 +26,7 @@
                   ['link' => route('admin.users.index'), 'title' => 'Usuários'],
                     ['link' => route('admin.categories.index'), 'title' => 'Categorias'],
                     ['link' => route('admin.series.index'), 'title' => 'Series'],
+                    ['link' => route('admin.videos.index'), 'title' => 'Vídeos'],
 
                 ];
                 $menus = Navigation::links($arrayLinks);
@@ -72,7 +73,9 @@
             </div>
         @endif
 
-        @yield('content')
+            <div class="container">
+                 @yield('content')
+            </div>
     </div>
 
     <!-- Scripts -->
