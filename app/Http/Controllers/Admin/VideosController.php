@@ -112,7 +112,7 @@ class VideosController extends Controller
      * @param  \CodeFlix\Models\Video  $video
      * @return \Illuminate\Http\Response
      */
-    public function updateupdate(Request $request, $id)
+    public function update(Request $request, $id)
     {
         /** @var Form $form */
         $form = \FormBuilder::create(VideoForm::class);
