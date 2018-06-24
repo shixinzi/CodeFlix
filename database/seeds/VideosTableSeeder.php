@@ -14,14 +14,15 @@ class VideosTableSeeder extends Seeder
     {
         /** @var Collection $series */
         $series = \CodeFlix\Models\Serie::all();
+
         factory(\CodeFlix\Models\Video::class, 100)
             ->create()
             ->each(function ($video) use($series){
                 $num = rand(1,3);
-                if ($num%2==0){
-                    //associa a serie com video
+                if($num%2==0){
                     $serie = $series->random();
-                    $video->serie_id = $serie->id;
+                    $video->serie()->associate($serie);
+                    $video->save();
                 }
 
         });
