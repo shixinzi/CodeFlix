@@ -7,7 +7,8 @@
             ],
             [
                 'title' => 'Séries e Categorias',
-                'link' => ''
+                'link' => !isset($video)?'#':route('admin.videos.relations.create',['video' => $video->id]),
+                'disabled' => !isset($video)?true:false
             ],
             [
                 'title' => 'Vídeo e Thumbnail',
