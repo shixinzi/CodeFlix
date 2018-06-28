@@ -3,6 +3,7 @@
 namespace CodeFlix\Models;
 
 use Bootstrapper\Interfaces\TableInterface;
+use CodeFlix\Media\SeriePaths;
 use Illuminate\Database\Eloquent\Model;
 
 
@@ -14,6 +15,7 @@ use Illuminate\Database\Eloquent\Model;
 class Serie extends Model implements TableInterface
 {
 
+    use SeriePaths;
 
     /**
      * The attributes that are mass assignable.
