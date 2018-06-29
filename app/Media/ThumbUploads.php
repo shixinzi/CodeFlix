@@ -23,7 +23,7 @@ trait ThumbUploads
     public function upload($model, UploadedFile $file)
     {
         /** @var FilesystemAdapter $storage */
-        $storage = $model->getStorage();
+        $storage = $model->getStorageDisk();
 
         $name = md5(time() . "{$model->id}-{$file->getClientOriginalName()}") . ".{$file->guessExtension()}";
 

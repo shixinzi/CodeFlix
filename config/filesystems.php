@@ -57,7 +57,7 @@ return [
 
         'videos_test' => [
             'driver' => 'local',
-            'root' => storage_path('app/videos_test')
+            'root' => storage_path('app/videos_test'),
         ],
 
         's3' => [
