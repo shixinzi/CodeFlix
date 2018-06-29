@@ -55,7 +55,7 @@ return [
             'visibility' => 'public',
         ],
 
-        'videos_test' => [
+        'videos_local' => [
             'driver' => 'local',
             'root' => storage_path('app/videos_test'),
         ],

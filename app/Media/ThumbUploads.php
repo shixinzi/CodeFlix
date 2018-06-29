@@ -28,7 +28,7 @@ trait ThumbUploads
         $name = md5(time() . "{$model->id}-{$file->getClientOriginalName()}") . ".{$file->guessExtension()}";
 
         $result = $storage->putFileAs($model->thumb_folder_storage, $file, $name);
-        return $result ? name : $result;
+        return $result ? $name : $result;
     }
 
 
