@@ -31,7 +31,7 @@ class Serie extends Model implements TableInterface
      */
     public function getTableHeaders()
     {
-        return ['#', 'Título', 'Descrição'];
+        return ['#'];
     }
 
     /**
@@ -46,10 +46,6 @@ class Serie extends Model implements TableInterface
         switch ($header){
             case '#':
                 return $this->id;
-            case 'Título':
-                return $this->title;
-            case 'Descrição':
-                return $this->description;
         }
     }
 }

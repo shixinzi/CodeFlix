@@ -19,7 +19,7 @@ trait SeriePaths
 
     public function getThumbPathAttribute()
     {
-        return $this->getAbsolutePath($this->getStorage(), $this->thumb_relative);
+        return $this->getAbsolutePath($this->getStorageDisk(), $this->thumb_relative);
     }
 
 
@@ -31,7 +31,18 @@ trait SeriePaths
 
     public function getThumbSmallPathAttribute()
     {
-        return $this->getAbsolutePath($this->getStorage(), $this->thumb_small_relative);
+        return $this->getAbsolutePath($this->getStorageDisk(), $this->thumb_small_relative);
+    }
+
+
+    public function getThumbAssetAttribute()
+    {
+        return route('admin.series.thumb_asset', ['serie' => $this->id]);
+    }
+
+    public function getThumbSmallAssetAttribute()
+    {
+        return route('admin.series.thumb_small_asset', ['serie' => $this->id]);
     }
 
 }

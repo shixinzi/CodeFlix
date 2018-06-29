@@ -15,11 +15,11 @@ trait VideoStorages
         return \Storage::disk($this->getStorageDiskDriver());
     }
 
-
     protected function getStorageDiskDriver()
     {
         return config('filesystems.default');
     }
+
 
     protected function getAbsolutePath(FilesystemAdapter $storage, $fileRelativePath)
     {

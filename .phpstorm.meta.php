@@ -3,7 +3,7 @@ namespace PHPSTORM_META {
 
    /**
     * PhpStorm Meta file, to provide autocomplete information for PhpStorm
-    * Generated on 2018-06-23 18:24:19.
+    * Generated on 2018-06-29 17:39:27.
     *
     * @author Barry vd. Heuvel <barryvdh@gmail.com>
     * @see https://github.com/barryvdh/laravel-ide-helper
@@ -74,6 +74,7 @@ namespace PHPSTORM_META {
         'CodeFlix\Repositories\UserRepository' => \CodeFlix\Repositories\UserRepositoryEloquent::class,
         'CodeFlix\Repositories\CategoryRepository' => \CodeFlix\Repositories\CategoryRepositoryEloquent::class,
         'CodeFlix\Repositories\SerieRepository' => \CodeFlix\Repositories\SerieRepositoryEloquent::class,
+        'CodeFlix\Repositories\VideoRepository' => \CodeFlix\Repositories\VideoRepositoryEloquent::class,
         'blade.compiler' => \Illuminate\View\Compilers\BladeCompiler::class,
         'translation.loader' => \Illuminate\Translation\FileLoader::class,
         'translator' => \Illuminate\Translation\Translator::class,
@@ -227,6 +228,7 @@ namespace PHPSTORM_META {
         'CodeFlix\Repositories\UserRepository' => \CodeFlix\Repositories\UserRepositoryEloquent::class,
         'CodeFlix\Repositories\CategoryRepository' => \CodeFlix\Repositories\CategoryRepositoryEloquent::class,
         'CodeFlix\Repositories\SerieRepository' => \CodeFlix\Repositories\SerieRepositoryEloquent::class,
+        'CodeFlix\Repositories\VideoRepository' => \CodeFlix\Repositories\VideoRepositoryEloquent::class,
         'blade.compiler' => \Illuminate\View\Compilers\BladeCompiler::class,
         'translation.loader' => \Illuminate\Translation\FileLoader::class,
         'translator' => \Illuminate\Translation\Translator::class,
@@ -380,6 +382,7 @@ namespace PHPSTORM_META {
         'CodeFlix\Repositories\UserRepository' => \CodeFlix\Repositories\UserRepositoryEloquent::class,
         'CodeFlix\Repositories\CategoryRepository' => \CodeFlix\Repositories\CategoryRepositoryEloquent::class,
         'CodeFlix\Repositories\SerieRepository' => \CodeFlix\Repositories\SerieRepositoryEloquent::class,
+        'CodeFlix\Repositories\VideoRepository' => \CodeFlix\Repositories\VideoRepositoryEloquent::class,
         'blade.compiler' => \Illuminate\View\Compilers\BladeCompiler::class,
         'translation.loader' => \Illuminate\Translation\FileLoader::class,
         'translator' => \Illuminate\Translation\Translator::class,
@@ -533,6 +536,7 @@ namespace PHPSTORM_META {
         'CodeFlix\Repositories\UserRepository' => \CodeFlix\Repositories\UserRepositoryEloquent::class,
         'CodeFlix\Repositories\CategoryRepository' => \CodeFlix\Repositories\CategoryRepositoryEloquent::class,
         'CodeFlix\Repositories\SerieRepository' => \CodeFlix\Repositories\SerieRepositoryEloquent::class,
+        'CodeFlix\Repositories\VideoRepository' => \CodeFlix\Repositories\VideoRepositoryEloquent::class,
         'blade.compiler' => \Illuminate\View\Compilers\BladeCompiler::class,
         'translation.loader' => \Illuminate\Translation\FileLoader::class,
         'translator' => \Illuminate\Translation\Translator::class,
@@ -686,6 +690,7 @@ namespace PHPSTORM_META {
         'CodeFlix\Repositories\UserRepository' => \CodeFlix\Repositories\UserRepositoryEloquent::class,
         'CodeFlix\Repositories\CategoryRepository' => \CodeFlix\Repositories\CategoryRepositoryEloquent::class,
         'CodeFlix\Repositories\SerieRepository' => \CodeFlix\Repositories\SerieRepositoryEloquent::class,
+        'CodeFlix\Repositories\VideoRepository' => \CodeFlix\Repositories\VideoRepositoryEloquent::class,
         'blade.compiler' => \Illuminate\View\Compilers\BladeCompiler::class,
         'translation.loader' => \Illuminate\Translation\FileLoader::class,
         'translator' => \Illuminate\Translation\Translator::class,
@@ -839,6 +844,7 @@ namespace PHPSTORM_META {
         'CodeFlix\Repositories\UserRepository' => \CodeFlix\Repositories\UserRepositoryEloquent::class,
         'CodeFlix\Repositories\CategoryRepository' => \CodeFlix\Repositories\CategoryRepositoryEloquent::class,
         'CodeFlix\Repositories\SerieRepository' => \CodeFlix\Repositories\SerieRepositoryEloquent::class,
+        'CodeFlix\Repositories\VideoRepository' => \CodeFlix\Repositories\VideoRepositoryEloquent::class,
         'blade.compiler' => \Illuminate\View\Compilers\BladeCompiler::class,
         'translation.loader' => \Illuminate\Translation\FileLoader::class,
         'translator' => \Illuminate\Translation\Translator::class,
@@ -992,6 +998,7 @@ namespace PHPSTORM_META {
         'CodeFlix\Repositories\UserRepository' => \CodeFlix\Repositories\UserRepositoryEloquent::class,
         'CodeFlix\Repositories\CategoryRepository' => \CodeFlix\Repositories\CategoryRepositoryEloquent::class,
         'CodeFlix\Repositories\SerieRepository' => \CodeFlix\Repositories\SerieRepositoryEloquent::class,
+        'CodeFlix\Repositories\VideoRepository' => \CodeFlix\Repositories\VideoRepositoryEloquent::class,
         'blade.compiler' => \Illuminate\View\Compilers\BladeCompiler::class,
         'translation.loader' => \Illuminate\Translation\FileLoader::class,
         'translator' => \Illuminate\Translation\Translator::class,
