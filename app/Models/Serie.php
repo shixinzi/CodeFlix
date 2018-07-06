@@ -22,7 +22,7 @@ class Serie extends Model implements TableInterface
      *
      * @var array
      */
-    protected $fillable = ['title', 'description'];
+    protected $fillable = ['title', 'description', 'thumb'];
 
     /**
      * A list of headers to be used when a table is displayed
