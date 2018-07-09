@@ -3,6 +3,7 @@
 namespace CodeFlix\Repositories;
 
 use CodeFlix\Media\ThumbUploads;
+use CodeFlix\Media\Uploads;
 use Prettus\Repository\Eloquent\BaseRepository;
 use Prettus\Repository\Criteria\RequestCriteria;
 use CodeFlix\Repositories\SerieRepository;
@@ -16,6 +17,8 @@ use CodeFlix\Validators\SerieValidator;
  */
 class SerieRepositoryEloquent extends BaseRepository implements SerieRepository
 {
+
+    use ThumbUploads, Uploads;
 
     public function create(array $attributes)
     {
@@ -33,7 +36,7 @@ class SerieRepositoryEloquent extends BaseRepository implements SerieRepository
         return $model;
     }
 
-    use ThumbUploads;
+
     /**
      * Specify Model class name
      *

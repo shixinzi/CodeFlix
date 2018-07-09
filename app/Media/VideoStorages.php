@@ -12,6 +12,7 @@ trait VideoStorages
      */
     public function getStorageDisk()
     {
+
         return \Storage::disk($this->getStorageDiskDriver());
     }
 
@@ -23,6 +24,14 @@ trait VideoStorages
 
     protected function getAbsolutePath(FilesystemAdapter $storage, $fileRelativePath)
     {
-        return $storage->getDriver()->getAdapter()->applyPathPrefix($fileRelativePath);
+        return $this>$this->isLocalDriver()?
+            $storage->getDriver()->getAdapter()->applyPathPrefix($fileRelativePath):
+            $storage->url($fileRelativePath);
+    }
+
+    public function isLocalDriver()
+    {
+        $driver = config("filesystems.disks.{$this->getStorageDiskDriver()}.driver");
+        return $driver == 'local';
     }
 }

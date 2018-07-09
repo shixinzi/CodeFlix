@@ -27,6 +27,9 @@ class Video extends Model implements Transformable, TableInterface
         'title', 'description', 'duration', 'published', 'serie_id'
     ];
 
+    protected $casts = [
+      'completed' => 'boolean'
+    ];
 
     //muitos para um
     public function serie(){

@@ -6,11 +6,9 @@ namespace CodeFlix\Media;
 
 use Illuminate\Filesystem\FilesystemAdapter;
 use Illuminate\Http\UploadedFile;
-use Imagine\Image\Box;
 
 trait VideosUploads
 {
-    use Uploads;
 
     public function uploadFile($id, UploadedFile $file)
     {
