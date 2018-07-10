@@ -24,7 +24,7 @@ trait VideoStorages
 
     protected function getAbsolutePath(FilesystemAdapter $storage, $fileRelativePath)
     {
-        return $this>$this->isLocalDriver()?
+        return $this->isLocalDriver()?
             $storage->getDriver()->getAdapter()->applyPathPrefix($fileRelativePath):
             $storage->url($fileRelativePath);
     }
