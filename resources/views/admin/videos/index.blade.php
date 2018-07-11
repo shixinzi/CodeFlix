@@ -33,7 +33,7 @@
 @push('styles')
     <style type="text/css">
         .media-body{
-            width: auto;
+            width: 400px;
         }
     </style>
 @endpush

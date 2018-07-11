@@ -5,6 +5,7 @@ namespace CodeFlix\Models;
 use Bootstrapper\Interfaces\TableInterface;
 use CodeFlix\Media\SeriePaths;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 
 /**
@@ -16,6 +17,7 @@ class Serie extends Model implements TableInterface
 {
 
     use SeriePaths;
+    use SoftDeletes;
 
     /**
      * The attributes that are mass assignable.

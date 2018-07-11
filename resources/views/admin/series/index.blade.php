@@ -36,8 +36,8 @@
 @endsection
 @push('styles')
     <style type="text/css">
-        table > thead > tr > th:nth-child(2){
-            width: 75%;
+        .media-body {
+            width: 400px;
         }
     </style>
 @endpush

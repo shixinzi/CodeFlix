@@ -4,6 +4,7 @@ namespace CodeFlix\Models;
 
 use Bootstrapper\Interfaces\TableInterface;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 /**
  * Class Category.
@@ -13,6 +14,7 @@ use Illuminate\Database\Eloquent\Model;
 class Category extends Model implements TableInterface
 {
 
+    use SoftDeletes;
 
     /**
      * The attributes that are mass assignable.
