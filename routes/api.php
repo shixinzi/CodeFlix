@@ -32,10 +32,17 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
                 'expires' => 1
             ])->name('.access_token');
 
-        ApiRoute::group(['middleware' => 'api.throttle', 'limit' => 100, 'expires' => 3], function()
-        {
-
-        });
+        ApiRoute::group(
+            [
+                'middleware' => ['api.throttle', 'api.auth'],
+                'limit' => 100,
+                'expires' => 3
+            ], function()
+            {
+                ApiRoute::get('/test', function (){
+                    return "hello";
+                });
+            });
     });
 
 });
