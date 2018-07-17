@@ -32,6 +32,14 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
                 'expires' => 1
             ])->name('.access_token');
 
+        ApiRoute::post('/refresh_token',
+            [
+            'uses' => 'AuthController@refreshToken',
+                'middleware' => 'api.throttle',
+                'limit' => 10,
+                'expires' => 1
+            ])->name('.refresh_token');
+
         ApiRoute::group(
             [
                 'middleware' => ['api.throttle', 'api.auth'],
@@ -39,6 +47,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
                 'expires' => 3
             ], function()
             {
+                ApiRoute::post('/logout', 'AuthController@logout');
                 ApiRoute::get('/test', function (){
                     return "hello";
                 });
