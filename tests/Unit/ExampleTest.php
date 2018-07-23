@@ -17,4 +17,9 @@ class ExampleTest extends TestCase
     {
         $this->assertTrue(true);
     }
+
+    public function testInteger()
+    {
+        $this->assertEquals(4, 2+2);
+    }
 }
