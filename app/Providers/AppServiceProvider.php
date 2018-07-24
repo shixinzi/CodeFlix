@@ -7,6 +7,7 @@ use Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider;
 use Dingo\Api\Exception\Handler;
 use Illuminate\Auth\AuthenticationException;
 use Illuminate\Support\ServiceProvider;
+use Laravel\Dusk\DuskServiceProvider;
 
 
 class AppServiceProvider extends ServiceProvider
@@ -40,6 +41,7 @@ class AppServiceProvider extends ServiceProvider
     {
         if ($this->app->environment() !== 'production') {
             $this->app->register(IdeHelperServiceProvider::class);
+            $this->app->register(DuskServiceProvider::class);
         }
 
         $this->app->bind(

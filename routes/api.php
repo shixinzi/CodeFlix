@@ -12,10 +12,10 @@ use Illuminate\Http\Request;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
-
+/*
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
-});
+});*/
 
 
 \ApiRoute::version('v1',function (){
@@ -50,6 +50,11 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
                 ApiRoute::post('/logout', 'AuthController@logout');
                 ApiRoute::get('/test', function (){
                     return "hello";
+                });
+                ApiRoute::get('/user', function (Request $request){
+                    return $request->user('api');
+                    //return app(\Dingo\Api\Auth\Auth::class)->user();
+                    //return \Auth::guard('api')->user();
                 });
             });
     });
