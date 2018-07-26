@@ -56,6 +56,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
                     //return app(\Dingo\Api\Auth\Auth::class)->user();
                     //return \Auth::guard('api')->user();
                 });
+                ApiRoute::resource('categories','CategoriesController@index');
             });
     });
 
