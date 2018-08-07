@@ -10,9 +10,10 @@
                         <ion-card-title text-center>CodeFlix</ion-card-title>
                         <form (submit)="login()">
                             <ion-item>
-                                <ion-input type="text" name="email" placeholder="E-mail" [value]="email"></ion-input>
-                            </ion-item>
+                                <ion-input type="text" name="email" placeholder="E-mail" [value]="email" (input)="alterouEmail($event)"></ion-input>
 
+                            </ion-item>
+                            {{ email }}
                             <ion-item>
                                 <ion-input type="password" name="password" placeholder="Password"></ion-input>
                             </ion-item>

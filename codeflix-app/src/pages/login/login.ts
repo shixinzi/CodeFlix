@@ -28,4 +28,8 @@ export class LoginPage {
   login(){
     alert('botao login foi clicado')
   }
+
+  alterouEmail(event){
+    this.email = event.target.value;
+  }
 }
