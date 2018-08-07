@@ -10,7 +10,7 @@
                         <ion-card-title text-center>CodeFlix</ion-card-title>
                         <form (submit)="login()">
                             <ion-item>
-                                <ion-input type="text" name="email" placeholder="E-mail" [value]="email" (input)="alterouEmail($event)"></ion-input>
+                                <ion-input type="text" name="email" placeholder="E-mail" [(ngModel)]="email"></ion-input>
 
                             </ion-item>
                             {{ email }}
