@@ -3,7 +3,7 @@ namespace PHPSTORM_META {
 
    /**
     * PhpStorm Meta file, to provide autocomplete information for PhpStorm
-    * Generated on 2018-07-26 12:55:21.
+    * Generated on 2018-08-08 20:06:50.
     *
     * @author Barry vd. Heuvel <barryvdh@gmail.com>
     * @see https://github.com/barryvdh/laravel-ide-helper
@@ -83,7 +83,6 @@ namespace PHPSTORM_META {
         'tymon.jwt.secret' => \Tymon\JWTAuth\Console\JWTGenerateSecretCommand::class,
         'api.router' => \Dingo\Api\Routing\Router::class,
         'Dingo\Api\Routing\ResourceRegistrar' => \Dingo\Api\Routing\ResourceRegistrar::class,
-        'api.url' => \Dingo\Api\Routing\UrlGenerator::class,
         'api.limiting' => \Dingo\Api\Http\RateLimit\Handler::class,
         'api.http.validator' => \Dingo\Api\Http\RequestValidator::class,
         'Dingo\Api\Http\Validation\Domain' => \Dingo\Api\Http\Validation\Domain::class,
@@ -271,7 +270,6 @@ namespace PHPSTORM_META {
         'tymon.jwt.secret' => \Tymon\JWTAuth\Console\JWTGenerateSecretCommand::class,
         'api.router' => \Dingo\Api\Routing\Router::class,
         'Dingo\Api\Routing\ResourceRegistrar' => \Dingo\Api\Routing\ResourceRegistrar::class,
-        'api.url' => \Dingo\Api\Routing\UrlGenerator::class,
         'api.limiting' => \Dingo\Api\Http\RateLimit\Handler::class,
         'api.http.validator' => \Dingo\Api\Http\RequestValidator::class,
         'Dingo\Api\Http\Validation\Domain' => \Dingo\Api\Http\Validation\Domain::class,
@@ -459,7 +457,6 @@ namespace PHPSTORM_META {
         'tymon.jwt.secret' => \Tymon\JWTAuth\Console\JWTGenerateSecretCommand::class,
         'api.router' => \Dingo\Api\Routing\Router::class,
         'Dingo\Api\Routing\ResourceRegistrar' => \Dingo\Api\Routing\ResourceRegistrar::class,
-        'api.url' => \Dingo\Api\Routing\UrlGenerator::class,
         'api.limiting' => \Dingo\Api\Http\RateLimit\Handler::class,
         'api.http.validator' => \Dingo\Api\Http\RequestValidator::class,
         'Dingo\Api\Http\Validation\Domain' => \Dingo\Api\Http\Validation\Domain::class,
@@ -647,7 +644,6 @@ namespace PHPSTORM_META {
         'tymon.jwt.secret' => \Tymon\JWTAuth\Console\JWTGenerateSecretCommand::class,
         'api.router' => \Dingo\Api\Routing\Router::class,
         'Dingo\Api\Routing\ResourceRegistrar' => \Dingo\Api\Routing\ResourceRegistrar::class,
-        'api.url' => \Dingo\Api\Routing\UrlGenerator::class,
         'api.limiting' => \Dingo\Api\Http\RateLimit\Handler::class,
         'api.http.validator' => \Dingo\Api\Http\RequestValidator::class,
         'Dingo\Api\Http\Validation\Domain' => \Dingo\Api\Http\Validation\Domain::class,
@@ -835,7 +831,6 @@ namespace PHPSTORM_META {
         'tymon.jwt.secret' => \Tymon\JWTAuth\Console\JWTGenerateSecretCommand::class,
         'api.router' => \Dingo\Api\Routing\Router::class,
         'Dingo\Api\Routing\ResourceRegistrar' => \Dingo\Api\Routing\ResourceRegistrar::class,
-        'api.url' => \Dingo\Api\Routing\UrlGenerator::class,
         'api.limiting' => \Dingo\Api\Http\RateLimit\Handler::class,
         'api.http.validator' => \Dingo\Api\Http\RequestValidator::class,
         'Dingo\Api\Http\Validation\Domain' => \Dingo\Api\Http\Validation\Domain::class,
@@ -1023,7 +1018,6 @@ namespace PHPSTORM_META {
         'tymon.jwt.secret' => \Tymon\JWTAuth\Console\JWTGenerateSecretCommand::class,
         'api.router' => \Dingo\Api\Routing\Router::class,
         'Dingo\Api\Routing\ResourceRegistrar' => \Dingo\Api\Routing\ResourceRegistrar::class,
-        'api.url' => \Dingo\Api\Routing\UrlGenerator::class,
         'api.limiting' => \Dingo\Api\Http\RateLimit\Handler::class,
         'api.http.validator' => \Dingo\Api\Http\RequestValidator::class,
         'Dingo\Api\Http\Validation\Domain' => \Dingo\Api\Http\Validation\Domain::class,
@@ -1211,7 +1205,6 @@ namespace PHPSTORM_META {
         'tymon.jwt.secret' => \Tymon\JWTAuth\Console\JWTGenerateSecretCommand::class,
         'api.router' => \Dingo\Api\Routing\Router::class,
         'Dingo\Api\Routing\ResourceRegistrar' => \Dingo\Api\Routing\ResourceRegistrar::class,
-        'api.url' => \Dingo\Api\Routing\UrlGenerator::class,
         'api.limiting' => \Dingo\Api\Http\RateLimit\Handler::class,
         'api.http.validator' => \Dingo\Api\Http\RequestValidator::class,
         'Dingo\Api\Http\Validation\Domain' => \Dingo\Api\Http\Validation\Domain::class,

@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import {Http} from "@angular/http";
+import 'rxjs/add/operator/toPromise'
 
 /**
  * Generated class for the LoginPage page.
@@ -18,7 +20,11 @@ export class LoginPage {
   email:string;
   password:string;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(
+      public navCtrl: NavController,
+      public navParams: NavParams,
+      private http:Http
+      ) {
   }
 
   ionViewDidLoad() {
@@ -26,10 +32,17 @@ export class LoginPage {
   }
 
   login(){
-    alert('botao login foi clicado')
+   this.http.post('http://localhost:8000/api/access_token', {
+     email: this.email,
+       password: this.password
+   })
+       .toPromise()
+       .then((response) => {
+         console.log(response);
+       });
+
+
   }
 
-  alterouEmail(event){
-    this.email = event.target.value;
-  }
+
 }
