@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import {Http} from "@angular/http";
 import 'rxjs/add/operator/toPromise'
+import {JwtClient} from "../../providers/jwt-client/jwt-client";
 
 /**
  * Generated class for the LoginPage page.
@@ -23,7 +23,7 @@ export class LoginPage {
   constructor(
       public navCtrl: NavController,
       public navParams: NavParams,
-      private http:Http
+      private jwtClient:JwtClient
       ) {
   }
 
@@ -31,18 +31,13 @@ export class LoginPage {
     console.log('ionViewDidLoad LoginPage');
   }
 
-  login(){
-   this.http.post('http://localhost:8000/api/access_token', {
-     email: this.email,
-       password: this.password
-   })
-       .toPromise()
-       .then((response) => {
-         console.log(response);
-       });
-
+  login() {
+      this.jwtClient
+          .accessToken({email: this.email, pasword: this.password})
+          .then((token) => {
+              console.log(token);
+          });
 
   }
-
 
 }

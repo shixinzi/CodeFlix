@@ -12,6 +12,9 @@ import { Test } from '../components/test/test';
 import {LoginPage} from "../pages/login/login";
 
 import { HttpModule } from '@angular/http';
+import {IonicStorageModule} from "@ionic/storage";
+import { JwtClient } from '../providers/jwt-client/jwt-client';
+
 @NgModule({
   declarations: [
     MyApp,
@@ -24,6 +27,9 @@ import { HttpModule } from '@angular/http';
     HttpModule,
     BrowserModule,
     IonicModule.forRoot(MyApp),
+      IonicStorageModule.forRoot({
+          driverOrder: ['localstorage']
+      }),
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -35,7 +41,8 @@ import { HttpModule } from '@angular/http';
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    JwtClient
   ]
 })
 export class AppModule {}
