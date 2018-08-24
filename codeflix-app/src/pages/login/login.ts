@@ -17,27 +17,24 @@ import {JwtClient} from "../../providers/jwt-client/jwt-client";
 })
 export class LoginPage {
 
-  email:string;
-  password:string;
+    email: string;
+    password: string;
 
-  constructor(
-      public navCtrl: NavController,
-      public navParams: NavParams,
-      private jwtClient:JwtClient
-      ) {
-  }
+    constructor(
+        public navCtrl: NavController,
+        public navParams: NavParams,
+        private jwtClient: JwtClient
+    ) {
+    }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad LoginPage');
-  }
+    ionViewDidLoad() {
+        console.log('ionViewDidLoad LoginPage');
+    }
 
-  login() {
-      this.jwtClient
-          .accessToken({email: this.email, pasword: this.password})
-          .then((token) => {
-              console.log(token);
-          });
-
-  }
-
+    login() {
+        this.jwtClient.accessToken({email: this.email, password: this.password})
+            .then((token) => {
+                console.log(token);
+            });
+    }
 }
