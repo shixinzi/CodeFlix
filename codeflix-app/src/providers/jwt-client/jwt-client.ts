@@ -58,7 +58,7 @@ export class JwtClient {
   }
 
 accessToken(jwtCredentials: JwtCredentials): Promise<string> {
-    return this.http.post('http://localhost:8000/api/access_token', jwtCredentials)
+    return this.http.post('http://codeflix.test/api/access_token', jwtCredentials)
         .toPromise()
         .then((response: Response) => {
             let token = response.json().token;

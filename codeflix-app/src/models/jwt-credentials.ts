@@ -1,4 +1,4 @@
 export interface JwtCredentials {
     email;
-    pasword;
+    password;
 }

@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import 'rxjs/add/operator/toPromise'
 import {JwtClient} from "../../providers/jwt-client/jwt-client";
+import {Auth} from "../../providers/auth/auth";
 
 /**
  * Generated class for the LoginPage page.
@@ -23,7 +24,7 @@ export class LoginPage {
     constructor(
         public navCtrl: NavController,
         public navParams: NavParams,
-        private jwtClient: JwtClient
+        private auth:Auth
     ) {
     }
 
@@ -32,9 +33,9 @@ export class LoginPage {
     }
 
     login() {
-        this.jwtClient.accessToken({email: this.email, password: this.password})
+       /* this.jwtClient.accessToken({email: this.email, password: this.password})
             .then((token) => {
                 console.log(token);
             });
-    }
+    */}
 }
