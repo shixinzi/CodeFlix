@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import {JwtCredentials} from "../../models/jwt-credentials";
-import {Http, Response} from "@angular/http";
+import {Http, Response, Headers, RequestOptions} from "@angular/http";
 import {Storage} from "@ionic/storage";
 import {JwtHelper} from "angular2-jwt";
 
@@ -69,7 +69,19 @@ accessToken(jwtCredentials: JwtCredentials): Promise<string> {
   }
 
 
-
+revokeToken():Promise<null>{
+      let headers = new Headers();
+      headers.set('Authorization', `Bearer ${this._token}`);
+      let requestOptions = new RequestOptions({headers});
+    return this.http.post('http://codeflix.test/api/logout', {}, requestOptions)
+        .toPromise()
+        .then((response: Response) => {
+            this._token = null;
+            this._payload = null;
+            this.storage.clear();
+            return null;
+        });
+}
 
 
 

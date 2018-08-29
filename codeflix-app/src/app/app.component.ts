@@ -53,5 +53,11 @@ export class MyApp {
     this.nav.setRoot(page.component);
   }
 
+   logout(){
+      this.auth.logout().then(() => {
+          alert("Logout feito");
+      })
+   }
+
 
 }
