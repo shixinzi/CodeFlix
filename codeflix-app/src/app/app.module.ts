@@ -17,6 +17,7 @@ import { JwtClient } from '../providers/jwt-client/jwt-client';
 import {JwtHelper} from "angular2-jwt";
 import {Auth} from '../providers/auth/auth';
 
+
 @NgModule({
   declarations: [
     MyApp,
