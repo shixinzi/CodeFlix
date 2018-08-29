@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {IonicPage, MenuController, NavController, NavParams} from 'ionic-angular';
+import {IonicPage, MenuController, NavController, NavParams, ToastController} from 'ionic-angular';
 import 'rxjs/add/operator/toPromise'
 import {Auth} from "../../providers/auth/auth";
 import {HomePage} from "../home/home";
@@ -26,6 +26,7 @@ export class LoginPage {
     constructor(
         public navCtrl: NavController,
         public menuCtrl: MenuController,
+        public toastCtrl: ToastController,
         public navParams: NavParams,
         private auth:Auth ) {
         this.menuCtrl.enable(false);
@@ -39,12 +40,16 @@ export class LoginPage {
         this.auth.login(this.user)
             .then(() => {
                this.afterLogin();
-            });
-       /* this.jwtClient.accessToken({email: this.email, password: this.password})
-            .then((token) => {
-                console.log(token);
-            });
-    */}
+            })
+            .catch(() => {
+                let toast = this.toastCtrl.create({
+                    message: 'Email e/ou senha inválidos.',
+                    duration: 2000,
+                    position: 'top'
+                });
+                toast.present();
+            })
+    }
 
     afterLogin(){
         this.menuCtrl.enable(true);
